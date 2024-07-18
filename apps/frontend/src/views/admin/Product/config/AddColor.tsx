@@ -51,36 +51,39 @@ const AlpineModal: React.FC<IProps> = ({ selectedColors, setSelectedColors }) =>
     };
     return (
         <div>
-            <div className='flex'>
-                <div className="relative bg-clip-border mx-4 rounded-xl overflow-hidden bg-gradient-to-tr from-gray-100 to-gray-100 shadow-gray-900/20 shadow-lg mb-2 p- w-[90%]">
-                    <div className="flex flex-wrap gap-2">
+            <div className='flex '>
+                <div className="relative bg-clip-border mx-4 rounded-xl overflow-hidden bg-gradient-to-tr from-gray-100 to-gray-100 shadow-gray-900/20 shadow-lg mb-2 p- w-[90%] ">
+                    <div className="flex flex-wrap gap-2 ">
+
                         {selectedColors.map((color,index) => (
-                          
+                                    // <div className='text-left w-[30%] h-[17vh] mx-auto p-6 overflow-y-auto'> 
+                            
                             <div
-                                key={color.id}
-                                className="m-2 p-2 rounded-md flex items-center"
-                                style={{ backgroundColor: color.ten }}
+                            key={color.id}
+                            className="m-2 p-2 rounded-md flex items-center"
+                            style={{ backgroundColor: color.ten }}
                             >
                                 <span className="mr-2">{color.ma}</span>
                                 <button
                                     className="text-red-500 hover:text-red-700 focus:outline-none"
                                     onClick={() => handleRemoveColor(color)}
-                                >
+                                    >
                                     <svg
                                         className="h-5 w-5"
                                         fill="none"
                                         viewBox="0 0 24 24"
                                         stroke="currentColor"
-                                    >
+                                        >
                                         <path
                                             strokeLinecap="round"
                                             strokeLinejoin="round"
                                             strokeWidth={2}
                                             d="M6 18L18 6M6 6l12 12"
-                                        />
+                                            />
                                     </svg>
                                 </button>
                             </div>
+                        //  </div> 
                         ))}
                     </div>
                 </div>
@@ -128,8 +131,8 @@ const AlpineModal: React.FC<IProps> = ({ selectedColors, setSelectedColors }) =>
                                             Chọn màu sắc
                                         </h3>
                                     </div>
-                                </div>
-                                <div className="mt-5 sm:mt-4 grid grid-cols-5 gap-4">
+                                </div> 
+                                <div className="mt-5 sm:mt-4 grid grid-cols-5 gap-4  h-[57vh] mx-auto overflow-y-auto">
                                     {colors.map((color,index) => (
                                         <button
                                             key={color.id}

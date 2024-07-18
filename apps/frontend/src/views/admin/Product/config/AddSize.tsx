@@ -112,7 +112,7 @@ const ShowFormSize: React.FC<IProps> = ({ selectedSizes, setSelectedSizes }) => 
                                         </h3>
                                     </div>
                                 </div>
-                                <div className="mt-5 flex flex-wrap">
+                                <div className="mt-5 sm:mt-4 grid grid-cols-5 gap-4  h-[57vh] mx-auto overflow-y-auto">
                                     {sizes.map((size, index) => (
                                         <button
                                             key={size.id}
