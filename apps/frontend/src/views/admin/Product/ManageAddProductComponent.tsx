@@ -423,20 +423,6 @@ const FormAddProperties: React.FC<IProps> = ({ selectedColors, setSelectedColors
 
 
 
-
-
-
-      <div
-        className=" relative bg-clip-border mx-4 rounded-xl overflow-hidden  mb-5 p-2 flex items-center justify-center"
-      >
-        <button
-          className=" ml-6 mt-4 align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-2 px-4   rounded-lg bg-gradient-to-r from-green-500 to-green-400 text-white shadow-gray-100/20 border border-gray-100  hover:opacity-75 focus:ring focus:ring-gray-300 active:opacity-[0.85]"
-        > thêm </button>
-
-      </div>
-
-
-
     </div>
   )
 
